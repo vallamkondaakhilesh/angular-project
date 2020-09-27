@@ -1,0 +1,35 @@
+
+<h3>Student Details</h3>
+<div  style="width: 400px;">
+    <form (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <label for="id">ID</label>
+            <input type="text" class ="form-control" id="id" required [(ngModel)]="student.id" name="id">
+        </div>
+
+<div class="form-group">
+    <label for="name">Name</label>
+    <input type="text" class="form-control" id="name" required [(ngModel)]="student.name" name="name">
+
+</div>
+<div class="form-group">
+    <label for="dob">Dob</label>
+    <input type="date" class="form-control" id="dob" required [(ngModel)]="student.dob" name="dob">
+
+</div>
+<div class="form-group">
+    <label for="email">Email</label>
+    <input type="text" class="form-control" id="email" required [(ngModel)]="student.email" name="email">
+
+</div>
+<div class="form-group">
+    <label for="Mobile">Mobile</label>
+    <input type="text" class="form-control" id="mobile" required [(ngModel)]="student.mobile" name="mobile">
+
+</div>
+<button type="submit" class="btn  btn-success">Submit</button>
+</form>
+<div [hidden]="!submitted">
+    <h4>Submitted Successfully</h4>
+</div>
+[]
